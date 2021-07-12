@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ödev 2</title>
+    <style>
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <button onclick="fetchData()">Getir</button><br>
+        <!--Todo-->
+        <!-- <button onclick="filterData('age')" class="invisible" style="display: none;">Filtrele</button><br> -->
+
+        <label for="up18" style="display: none;" class="invisible">  Reşit Olanlar Göster</label>
+        <input type="checkbox" style="display: none;" class="invisible" id="up18" onclick="filterData('age')"><br>
+
+        <label for="checkBoxIsAktive" style="display: none;" class="invisible" > Aktive Kullancılar </label>
+        <input type="checkbox" style="display: none;" class="invisible" id="checkBoxIsAktive" onclick="filterData('isActive')"><br>
+        
+
+        <label for="search" style="display: none;" class="invisible">Search</label>
+        <input type="text" style="display: none;" class="invisible" id="search" name="search" maxlength="1" placeholder="Bir Harf Yazın" oninput="filterData('name')"> 
+        <ul class="list">
+            
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
